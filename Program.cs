@@ -25,9 +25,15 @@ namespace _Exercicios_C_
                 num2 = num1 + num3;
                 num3 = num1 + num2;
 
+                
                 Console.WriteLine("Deseja Continuar? (sim) (nao)");
                 continuar = Console.ReadLine();
 
+                if (num3 > 500) {
+
+                    Console.WriteLine("VALOR MÁXIMO ATINGIDO !!!");
+                    continuar = "nao"
+                }
             }
 
             // // VALIDAÇÃO
